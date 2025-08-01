@@ -1187,7 +1187,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .agenda-image {
