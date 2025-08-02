@@ -1187,7 +1187,26 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* permite quebrar linha quando necessário */
+    padding: 20px 0;
+}
+
+.agenda-image-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 768px) {
+    .agenda-image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .agenda-image-container img {
+        width: 90%; /* ocupa quase toda a largura da tela */
+    }
 }
 
 .agenda-image {
